@@ -1,0 +1,135 @@
+{
+  "projectType": "infrastructure",
+  "projectName": "Digger",
+  "projectDescription": "Open source IaC orchestration tool that runs Terraform, OpenTofu, and Terragrunt natively in your CI pipeline",
+  "theme": "aspen",
+  "primaryColor": "#8101E4",
+  "lightColor": "#AF48FF",
+  "darkColor": "#8101E4",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/architecture",
+              "concepts/how-it-works",
+              "concepts/components",
+              "concepts/units",
+              "concepts/workflows"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/pr-automation",
+              "features/drift-detection",
+              "features/state-management",
+              "features/policy-enforcement",
+              "features/locking",
+              "features/private-runners",
+              "features/multi-cloud"
+            ]
+          },
+          {
+            "group": "Cloud Providers",
+            "pages": [
+              "cloud-providers/aws",
+              "cloud-providers/gcp",
+              "cloud-providers/azure"
+            ]
+          },
+          {
+            "group": "Self-Hosting",
+            "pages": [
+              "self-hosting/overview",
+              "self-hosting/docker",
+              "self-hosting/kubernetes",
+              "self-hosting/authentication"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/terraform-setup",
+              "guides/opentofu-setup",
+              "guides/terragrunt-setup",
+              "guides/github-actions",
+              "guides/apply-on-merge",
+              "guides/multi-account-aws",
+              "guides/opa-policies"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "config/digger-yml",
+              "config/action-inputs",
+              "config/environment-variables"
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "troubleshooting/common-issues",
+              "troubleshooting/debugging",
+              "troubleshooting/faq"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "API",
+            "pages": [
+              "api/overview",
+              "api/authentication",
+              "api/units",
+              "api/locks",
+              "api/webhooks"
+            ]
+          },
+          {
+            "group": "CLI",
+            "pages": [
+              "cli/overview",
+              "cli/commands",
+              "cli/configuration"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Terraform/OpenTofu/Terragrunt PR automation",
+    "Infrastructure drift detection",
+    "PR-level locking and state management",
+    "OPA policy enforcement",
+    "Multi-cloud support (AWS, GCP, Azure)",
+    "Self-hostable orchestrator",
+    "GitHub Actions integration",
+    "Private runners"
+  ],
+  "publicApiSurface": [
+    "GitHub Action: diggerhq/digger",
+    "CLI: digger plan/apply",
+    "Backend API: /v1/units",
+    "Backend API: /v1/backend/*",
+    "Backend API: /v1/auth",
+    "Configuration: digger.yml",
+    "Terraform Provider: opentaco_unit"
+  ]
+}
